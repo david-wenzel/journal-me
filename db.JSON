@@ -1,0 +1,23 @@
+{
+    "prompts": [
+      {
+        "id": 1,
+        "prompt": "This is prompt 1"
+      },
+      {
+        "id": 2,
+        "prompt": "This is prompt 2"
+      }
+    ],
+
+    "entries": [
+    {
+        "id": 1,
+        "entry": "This is entry 1"
+    },
+    {
+        "id": 2,
+        "entry": "This is entry 2"
+    }
+    ]
+  }
