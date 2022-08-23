@@ -9,12 +9,12 @@ function App() {
   return (
     <Router>
     <div className="App">
-      <Switch>>
-      <Route path='/'>
-      <Landingpage />
-      </Route>
+      <Switch>
       <Route path='/homepage'>
         <DailyPromptContainer />
+      </Route>
+      <Route path='/'>
+      <Landingpage />
       </Route>
       </Switch>
     </div>
