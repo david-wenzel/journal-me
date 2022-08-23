@@ -1,7 +1,12 @@
 
 
 export default function EntryForm() {
-  return (
+  
+  
+//   form is simple submit which gets posted to db
+  
+  
+    return (
     <div>
       
     </div>

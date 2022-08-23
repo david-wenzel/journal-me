@@ -1,7 +1,11 @@
 
 
 export default function Search() {
-  return (
+  
+  
+//   search filters through mapped journal entries
+  
+    return (
     <div>
       
     </div>
