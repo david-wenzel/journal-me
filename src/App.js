@@ -10,11 +10,11 @@ function App() {
     <Router>
     <div className="App">
       <Switch>
+      <Route exact path='/'>
+      <Landingpage />
+      </Route>
       <Route path='/homepage'>
         <DailyPromptContainer />
-      </Route>
-      <Route path='/'>
-      <Landingpage />
       </Route>
       </Switch>
     </div>

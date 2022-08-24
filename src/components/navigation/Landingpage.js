@@ -29,7 +29,7 @@ let handleSubmit = e => {
       <h2>We are currently in BETA, please sign-up for our email list for access to our demo app</h2>
       <form onSubmit={handleSubmit}>
         <input
-          type="text"
+          type="email"
           name="email"
           id="email"
           value={email}
