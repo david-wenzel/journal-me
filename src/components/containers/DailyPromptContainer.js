@@ -8,34 +8,29 @@ import Prompt from "../promptFunctionality/Prompt";
 export default function DailyPromptContainer() {
   
   const [prompts, setPrompts] = useState([]);
-  // const [prompt, setPrompt] = useState('');
 
 
-  const fetchDailyPrompt = async () => {
+  const fetchPrompts = async () => {
     try {
       const resp = await fetch("http://localhost:3001/prompts")
       const data = await resp.json()
-      setPrompts(data)
-
+      setPrompts(data.map(a => a.prompt))
+      
     } catch (error) {
       alert(error)
     }
   }
   
   useEffect(() => {
-    fetchDailyPrompt()
+    fetchPrompts()
   }, []);
- 
-
-  // rough random
-  // let randomPrompt = prompts[Math.floor(Math.random()*prompts.length)];
-
-
+  
+  let randomPrompt = prompts[Math.floor(Math.random() * prompts.length)]
 
   return (
     <div>
       <Navbar />
-      <Prompt prompt={prompt}/>
+      <Prompt prompt={randomPrompt}/>
       <EntryForm />
       <JournalEntries />
     </div>
