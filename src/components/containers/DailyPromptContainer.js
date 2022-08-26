@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Navbar from "../navigation/Navbar";
 import EntryForm from "../promptFunctionality/EntryForm";
 import JournalEntries from "../promptFunctionality/JournalEntries";
-import Prompt from "../promptFunctionality/Prompt";
+// import Prompt from "../promptFunctionality/Prompt";
 
 
 export default function DailyPromptContainer() {
@@ -14,8 +14,8 @@ export default function DailyPromptContainer() {
     try {
       const resp = await fetch("http://localhost:3001/prompts")
       const data = await resp.json()
+      //maps over state variable of prompts to create an array of prompts
       setPrompts(data.map(a => a.prompt))
-      
     } catch (error) {
       alert(error)
     }
@@ -25,13 +25,13 @@ export default function DailyPromptContainer() {
     fetchPrompts()
   }, []);
   
-  let randomPrompt = prompts[Math.floor(Math.random() * prompts.length)]
+  
 
   return (
     <div>
       <Navbar />
-      <Prompt prompt={randomPrompt}/>
-      <EntryForm />
+      {/* <Prompt prompt={prompts}/> */}
+      <EntryForm prompt={prompts} />
       <JournalEntries />
     </div>
   )
