@@ -1,14 +1,15 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import DailyPromptContainer from './components/containers/DailyPromptContainer';
 import Landingpage from './components/navigation/Landingpage';
-
+import Navbar from './components/navigation/Navbar';
 
 
 
 function App() {
   return (
-    <Router>
     <div className="App">
+      <Router>
+      <Navbar />
       <Switch>
       <Route exact path='/'>
       <Landingpage />
@@ -17,8 +18,8 @@ function App() {
         <DailyPromptContainer />
       </Route>
       </Switch>
-    </div>
     </Router>
+    </div>
   );
 }
 

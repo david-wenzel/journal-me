@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { useHistory } from "react-router-dom";
 
 export default function EntryForm({prompt}) {
   const [entry, setEntry] = useState('');
@@ -7,7 +8,7 @@ export default function EntryForm({prompt}) {
 //   form is simple submit which gets posted to db
 let randomPrompt = (prompt[Math.floor(Math.random() * prompt.length)])
 // setUsedPrompt(randomPrompt
-
+let history = useHistory()
 
 const handleSubmit = e => {
   e.preventDefault()
@@ -21,6 +22,7 @@ const handleSubmit = e => {
     body: JSON.stringify(newEntry)
   })
   setEntry('')
+  history.push("/homepage/entries")
 }
 
   
