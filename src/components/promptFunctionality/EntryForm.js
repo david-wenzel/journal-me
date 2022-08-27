@@ -22,18 +22,21 @@ const handleSubmit = e => {
     body: JSON.stringify(newEntry)
   })
   setEntry('')
-  history.push("/homepage/entries")
+  history.push("/homepage")
 }
-
+function handleView(){
+    history.push("/homepage/entries")
+}
   
     return (
-    <div>
+    <div style={{height: '100vh'}}>
         <form onSubmit={handleSubmit}>
             <input type='text'  value={randomPrompt} />
             <br></br>
             <textarea onChange={e => setEntry(e.target.value)} type='text' name="entry" id="entry" value={entry} placeholder="journal your thoughts..." />
             <input type="submit" value=">" />
         </form>
+        <button onClick={handleView}>V</button>
     </div>
   )
 }

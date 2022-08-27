@@ -9,15 +9,14 @@ function App() {
   return (
     <div className="App">
       <Router>
-      <Navbar />
-      <Switch>
+      {/* <Switch> */}
       <Route exact path='/'>
       <Landingpage />
       </Route>
       <Route path='/homepage'>
         <DailyPromptContainer />
       </Route>
-      </Switch>
+      {/* </Switch> */}
     </Router>
     </div>
   );

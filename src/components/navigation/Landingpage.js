@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
+import './Landingpage.css';
 
 export default function Landingpage() {
 
@@ -26,7 +27,11 @@ let handleSubmit = e => {
 
   return (
     <div>
-      <h2>We are currently in BETA, please sign-up for our email list for access to our demo app</h2>
+    <img id="leftHalf" src="https://images.squarespace-cdn.com/content/v1/5acdc43ecc8fed1087066353/1661218820629-MCUV09LJBSDBEO9ICKP4/unsplash-image-ciO5L8pin8A.jpg?format=2500w"></img>
+    <div id='rightHalf'>
+        <img id='logo' src="https://64.media.tumblr.com/0cbd98315d5588fb2e7b78eb002f1e54/8480379ca55bc022-78/s1280x1920/453f8a5fc6bfe78e8e7cd8d58b9f0384486fa027.pnj" />
+      <span id='info'>
+      <p>We are currently in BETA, please sign-up for our email list for access to our demo app</p>
       <form onSubmit={handleSubmit}>
         <input
           type="email"
@@ -37,8 +42,10 @@ let handleSubmit = e => {
           onChange={(e) => setEmail(e.target.value)}
           required
         />
-        <button type="submit">Sign Up</button>
+        <button type="submit">></button>
       </form>
+      </span>
+    </div>
     </div>
   )
 }

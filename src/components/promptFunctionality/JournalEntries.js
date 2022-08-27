@@ -25,7 +25,7 @@ export default function JournalEntries() {
     
 
       return (
-        <div className="notes-list">
+        <div style={{height: '100vh'}} className="notes-list">
 
             {entries.map(entry =>  <EntryCard key={entry.id} entry={entry} />)}
     
