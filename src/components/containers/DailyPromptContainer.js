@@ -7,9 +7,11 @@ import JournalEntries from "../promptFunctionality/JournalEntries";
 
 export default function DailyPromptContainer() {
   
+
   const [prompts, setPrompts] = useState([]);
+  const [entries, setEntries] = useState([]);
 
-
+  //---prompts--//
   const fetchPrompts = async () => {
     try {
       const resp = await fetch("http://localhost:3001/prompts")
@@ -24,6 +26,27 @@ export default function DailyPromptContainer() {
   useEffect(() => {
     fetchPrompts()
   }, []);
+
+
+  //----entries----//
+  
+    const fetchEntries = async () => {
+        try {
+            const resp = await fetch("http://localhost:3001/entries")
+            const data = await resp.json()
+            setEntries(data) 
+        } catch (error) {
+          alert(error)   
+        }
+    }
+    
+    useEffect(() => {
+        fetchEntries()
+    }, []);
+    
+   //prompt//
+
+   
   
   
 
@@ -32,7 +55,7 @@ export default function DailyPromptContainer() {
       <Navbar />
       {/* <Prompt prompt={prompts}/> */}
       <EntryForm prompt={prompts} />
-      <JournalEntries />
+      <JournalEntries entries={entries} />
     </div>
   )
 }

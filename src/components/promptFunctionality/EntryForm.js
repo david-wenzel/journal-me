@@ -3,11 +3,10 @@ import { useState } from "react"
 export default function EntryForm({prompt}) {
   const [entry, setEntry] = useState('');
 //   const [usedPrompt, setUsedPrompt] = useState();
-  
+  //try useReducer
 //   form is simple submit which gets posted to db
 let randomPrompt = (prompt[Math.floor(Math.random() * prompt.length)])
-// setUsedPrompt(randomPrompt)
-
+// setUsedPrompt(randomPrompt
 
 
 const handleSubmit = e => {

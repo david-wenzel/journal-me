@@ -1,12 +1,13 @@
 
 
-export default function EntryCard() {
+export default function EntryCard({entry}) {
   return (
     <div>
-        <h3>title</h3>
-        <p> this is a entry</p>
+        <h3>{entry.randomPrompt || 'My Thoughts'}</h3>
+        <p>{entry.entry}</p>
         <small>date created</small>
         <button>delete</button>
     </div>
   )
 }
+
