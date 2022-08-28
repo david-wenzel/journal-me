@@ -77,6 +77,10 @@
       "randomPrompt": "This is prompt 1",
       "entry": "adsfasdfvasdv",
       "id": 14
+    },
+    {
+      "entry": "gfhjhjg",
+      "id": 15
     }
   ],
   "emails": [
@@ -91,30 +95,6 @@
     {
       "email": "dwenzel95@gmail.com",
       "id": 3
-    },
-    {
-      "email": "dwenzel95@gmail.com",
-      "id": 4
-    },
-    {
-      "email": "dwenzel95@gmail.com",
-      "id": 5
-    },
-    {
-      "email": "dwenzel95@gmail.com",
-      "id": 6
-    },
-    {
-      "email": "dwenzel95@gmail.com",
-      "id": 7
-    },
-    {
-      "email": "dwenzel95@gmail.com",
-      "id": 8
-    },
-    {
-      "email": "dwenzel95@gmail.com",
-      "id": 9
     }
   ]
 }

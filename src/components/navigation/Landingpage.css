@@ -1,51 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;1,400&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
 
-div{
+.landingPage div{
     margin: auto;
     width: 50%;
     scroll-behavior: none;
 }
-input {
+.landingPage input {
     background: transparent;
     outline: none;
-    font-family: 'Cormorant', serif;
-    color: #726659;
-    font-family: 'Lato', sans-serif;
-    font-size: 0.875em;
-    
+    color: grey;
+    font-size: 1.25em;
     border: solid 1px #b3aca7;
+    font-family: 'Cormorant', serif;
 }  
 
-button{
+.landingPage button{
     outline:none;
     cursor: pointer;
-    font-size: 0.875em;
-    border: solid 1px #b3aca7;
+    background: transparent;
+    font-size: 1.5em;
+    border: none;
+    color: #726659;
     
 }
+.landingPage form{
+    padding-left: 1em;
+}
 
-p{
+#about{
+    padding-bottom: 2em;
+}
+
+.landingPage p{
     font-family: 'Cormorant', serif;
     font-style: italic;
+    padding-left: 1em;
+    max-width: 35em;
 }
 
 #logo{
     max-height: 200px;
+    margin-top: 35%;
+    padding-left: .5em;
+}
+.info{
+    padding-top: none;
 }
 
-
-#leftHalf {
+.landingPage #leftHalf {
     width: 50%;
     position: absolute;
     left: 0px;
     height: 100%;
- }
- #leftHalf img{
+}
+.landingPage #leftHalf img{
     height: 100vh;
- }
- 
- #rightHalf {
+}
+
+.landingPage #rightHalf {
+    background-color: rgb(216, 204, 204);
     width: 50%;
     position: absolute;
     right: 0px;

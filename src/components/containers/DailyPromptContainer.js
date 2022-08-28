@@ -3,7 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import Navbar from "../navigation/Navbar";
 import EntryForm from "../promptFunctionality/EntryForm";
 import JournalEntries from "../promptFunctionality/JournalEntries";
-// import Prompt from "../promptFunctionality/Prompt";
+import Prompt from "../promptFunctionality/Prompt";
 
 
 export default function DailyPromptContainer() {
@@ -28,6 +28,7 @@ export default function DailyPromptContainer() {
     fetchPrompts()
   }, []);
 
+  // let randomPrompt = (prompt[Math.floor(Math.random() * prompt.length)])
 
  
  
@@ -47,11 +48,12 @@ export default function DailyPromptContainer() {
         fetchEntries()
     }, []);
     
+  
 
   return (
-    <div>
+    <div className="promptsContainer">
       <Navbar />
-      {/* <Prompt prompt={prompts}/> */}
+      <Prompt prompt={prompts}/>
       <EntryForm prompt={prompts} />
       <Route path="/homepage/entries">
       <JournalEntries entries={entries} />

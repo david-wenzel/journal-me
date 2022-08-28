@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import EntryCard from "./EntryCard";
+import './JournalEntries.css'
 
 
 export default function JournalEntries() {
@@ -25,7 +26,7 @@ export default function JournalEntries() {
     
 
       return (
-        <div style={{height: '100vh'}} className="notes-list">
+        <div className="notes-list">
 
             {entries.map(entry =>  <EntryCard key={entry.id} entry={entry} />)}
     
