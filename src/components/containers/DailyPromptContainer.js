@@ -1,16 +1,20 @@
 import { useEffect, useState } from "react";
-import { Route, Switch } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import Navbar from "../navigation/Navbar";
 import EntryForm from "../promptFunctionality/EntryForm";
+import { useHistory } from "react-router-dom";
 import JournalEntries from "../promptFunctionality/JournalEntries";
 import Prompt from "../promptFunctionality/Prompt";
+import './DailyPromptContainer.css'
 
 
 export default function DailyPromptContainer() {
   
+  let history = useHistory()
 
   const [prompts, setPrompts] = useState([]);
   const [entries, setEntries] = useState([]);
+
 
   //---prompts--//
   const fetchPrompts = async () => {
@@ -47,15 +51,15 @@ export default function DailyPromptContainer() {
     useEffect(() => {
         fetchEntries()
     }, []);
-    
+
   
 
   return (
     <div className="promptsContainer">
       <Navbar />
       <Prompt prompt={prompts}/>
-      <EntryForm prompt={prompts} />
-      <Route path="/homepage/entries">
+      <EntryForm />
+      <Route path="/entries">
       <JournalEntries entries={entries} />
       </Route>
     </div>

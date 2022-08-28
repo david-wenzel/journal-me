@@ -22,6 +22,11 @@ const style = {
       style={style}
       to="/about"
       >About</NavLink>
+      <NavLink 
+      activeStyle={{fontWeight: "bold"}}
+      style={style}
+      to="/entries"
+      >Entries</NavLink>
     </div>
   )
 }

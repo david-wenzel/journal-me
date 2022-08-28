@@ -2,93 +2,33 @@
   "prompts": [
     {
       "id": 1,
-      "prompt": "This is prompt 1"
+      "prompt": "What is the current attitude or positioning of your mind?"
     },
     {
       "id": 2,
-      "prompt": "This is prompt 2"
+      "prompt": "When you acknowledge a difficult moment that you have overcome, how do you feel?"
+    },
+    {
+      "id": 3,
+      "prompt": "So far in the year 2022, what are you most proud of acomplishing?"
     }
   ],
   "entries": [
     {
-      "id": 1,
-      "entry": "This is entry 1"
-    },
-    {
-      "id": 2,
-      "entry": "This is entry 2"
-    },
-    {
-      "randomPrompt": "This is prompt 1",
-      "entry": "sadfasdf",
-      "id": 3
-    },
-    {
-      "randomPrompt": "This is prompt 2",
-      "entry": "asdf",
-      "id": 4
-    },
-    {
-      "randomPrompt": "This is prompt 1",
-      "entry": "asdf",
-      "id": 5
-    },
-    {
-      "randomPrompt": "This is prompt 1",
-      "entry": "aSD",
-      "id": 6
-    },
-    {
-      "randomPrompt": "This is prompt 2",
-      "entry": "ASDF",
-      "id": 7
-    },
-    {
-      "randomPrompt": "This is prompt 2",
-      "entry": "asdf",
-      "id": 8
-    },
-    {
-      "randomPrompt": "This is prompt 1",
-      "entry": "asdfasdf",
+      "entry": "",
       "id": 9
     },
     {
-      "randomPrompt": "This is prompt 2",
-      "entry": "asdf",
+      "entry": "I am proud of cmompleting this projct\n",
       "id": 10
     },
     {
-      "randomPrompt": "This is prompt 2",
-      "entry": "hey there",
+      "entry": "hello again",
       "id": 11
     },
     {
-      "randomPrompt": "This is prompt 1",
-      "entry": "hey there",
+      "entry": "asdfasdfasdf",
       "id": 12
-    },
-    {
-      "randomPrompt": "This is prompt 1",
-      "entry": "ajdadshfaldfjadsfalskdjflasjflajsfljalfdjsfjaslkfjalsjkflsdkjf",
-      "id": 13
-    },
-    {
-      "randomPrompt": "This is prompt 1",
-      "entry": "adsfasdfvasdv",
-      "id": 14
-    },
-    {
-      "entry": "gfhjhjg",
-      "id": 15
-    },
-    {
-      "entry": "asdfasdfasdfsadfasdf",
-      "id": 16
-    },
-    {
-      "entry": "asdfasdfsadf",
-      "id": 17
     }
   ],
   "emails": [
@@ -107,6 +47,26 @@
     {
       "email": "dwenzel95@gmail.com",
       "id": 4
+    },
+    {
+      "email": "dwenzel95@gmail.com",
+      "id": 5
+    },
+    {
+      "email": "David@gmail.com",
+      "id": 6
+    },
+    {
+      "email": "dwenzel95@gmail.com",
+      "id": 7
+    },
+    {
+      "email": "dwenzel95@gmail.com",
+      "id": 8
+    },
+    {
+      "email": "dwenzel95@gmail.com",
+      "id": 9
     }
   ]
 }

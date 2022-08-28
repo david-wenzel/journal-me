@@ -31,7 +31,7 @@ let handleSubmit = e => {
     <div id='rightHalf'>
         <img id='logo' src="https://64.media.tumblr.com/0cbd98315d5588fb2e7b78eb002f1e54/8480379ca55bc022-78/s1280x1920/453f8a5fc6bfe78e8e7cd8d58b9f0384486fa027.pnj" />
       <span class='info'>
-      <p id='about'>JOURNAL.me is both service and community, founded in the tradition of self exploration and connection. We center outselves around well-being, design, art and self connection. When we take time to reflect we are able to connect to our values, intuitions, feelings, emotions, and our true selves. </p>  
+      <p id='about'>JOURNAL.me is both service and community, founded in the tradition of self exploration and reflection. We center outselves around well-being, design, art and self connection. When we take time to reflect we are able to connect to our values, intuitions, feelings, emotions, and our true selves. </p>  
       <p>We are currently in BETA, please sign-up for our email list for access to our demo app</p>
       <form onSubmit={handleSubmit}>
         <input

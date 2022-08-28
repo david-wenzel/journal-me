@@ -1,0 +1,5 @@
+.promptsContainer {
+    scroll-behavior: none;
+    position:relative;
+    padding-bottom: 2em;
+}

@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;1,400&display=swap'); 
+
+
+
+.prompt h1{
+    position: fixed;
+    margin: 0 auto;
+    text-align: left;
+    font-family: 'Cormorant', serif;
+    font-size: 5em;
+    padding-left: 15px;
+    padding-right: 50%;
+    margin-top: 20%;
+    font-style: italic;
+}
