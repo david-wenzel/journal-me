@@ -21,7 +21,7 @@ let handleSubmit = e => {
     },
     body: JSON.stringify(submitedEmail)
   })
-  history.push("/homepage/entries")
+  history.push("/homepage/")
   };
 
 
