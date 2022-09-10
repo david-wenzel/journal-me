@@ -2,7 +2,7 @@
   "prompts": [
     {
       "id": 1,
-      "prompt": "What is the current attitude or positioning of your mind?"
+      "prompt": "How do you feel?"
     },
     {
       "id": 2,
@@ -37,14 +37,6 @@
     {
       "entry": "asdf",
       "id": 6
-    },
-    {
-      "entry": "",
-      "id": 7
-    },
-    {
-      "entry": "asdfasdfasdfasdf",
-      "id": 8
     }
   ],
   "emails": [
@@ -55,130 +47,6 @@
     {
       "email": "dwenzel95@gmail.com",
       "id": 2
-    },
-    {
-      "email": "dwenzel95@gmail.com",
-      "id": 3
-    },
-    {
-      "email": "dwenzel95@gmail.com",
-      "id": 4
-    },
-    {
-      "email": "dwenzel95@gmail.com",
-      "id": 5
-    },
-    {
-      "email": "David@gmail.com",
-      "id": 6
-    },
-    {
-      "email": "dwenzel95@gmail.com",
-      "id": 7
-    },
-    {
-      "email": "dwenzel95@gmail.com",
-      "id": 8
-    },
-    {
-      "email": "dwenzel95@gmail.com",
-      "id": 9
-    },
-    {
-      "email": "dwenzel95@gmail.com",
-      "id": 10
-    },
-    {
-      "email": "dwenzel95@gmail.com",
-      "id": 11
-    },
-    {
-      "email": "dwenzel95@gmail.com",
-      "id": 12
-    },
-    {
-      "email": "fasdf@gmail.com",
-      "id": 13
-    },
-    {
-      "email": "dwenzel95@gmail.com",
-      "id": 14
-    },
-    {
-      "email": "dwenzel95@gmail.com",
-      "id": 15
-    },
-    {
-      "email": "dwenzel95@gmail.com",
-      "id": 16
-    },
-    {
-      "email": "dwenzel95@gmail.com",
-      "id": 17
-    },
-    {
-      "email": "dwenzel95@gmail.com",
-      "id": 18
-    },
-    {
-      "email": "dwenzel95@gmail.com",
-      "id": 19
-    },
-    {
-      "email": "dwenzel95@gmail.com",
-      "id": 20
-    },
-    {
-      "email": "dwenzel95@gmail.com",
-      "id": 21
-    },
-    {
-      "email": "dwenzel95@gmail.com",
-      "id": 22
-    },
-    {
-      "email": "dwenzel95@gmail.com",
-      "id": 23
-    },
-    {
-      "email": "dwenzel95@gmail.com",
-      "id": 24
-    },
-    {
-      "email": "dwenzel95@gmail.com",
-      "id": 25
-    },
-    {
-      "email": "dwenzel95@gmail.com",
-      "id": 26
-    },
-    {
-      "email": "dwenzel95@gmail.com",
-      "id": 27
-    },
-    {
-      "email": "dwenzel95@gmail.com",
-      "id": 28
-    },
-    {
-      "email": "dwenzel95@gmail.com",
-      "id": 29
-    },
-    {
-      "email": "dwenzel95@gmail.com",
-      "id": 30
-    },
-    {
-      "email": "dwenzel95@gmail.com",
-      "id": 31
-    },
-    {
-      "email": "dwenzel95@gmail.com",
-      "id": 32
-    },
-    {
-      "email": "dwenzel95@gmail.com",
-      "id": 33
     }
   ]
 }
