@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
-import { Route } from 'react-router-dom';
 import Navbar from "../navigation/Navbar";
 import EntryForm from "../promptFunctionality/EntryForm";
-import { useHistory } from "react-router-dom";
 import JournalEntries from "../promptFunctionality/JournalEntries";
 import Prompt from "../promptFunctionality/Prompt";
 import './DailyPromptContainer.css'
@@ -10,10 +8,8 @@ import './DailyPromptContainer.css'
 
 export default function DailyPromptContainer() {
   
-  let history = useHistory()
-
-  const [prompts, setPrompts] = useState([]);
   const [entries, setEntries] = useState([]);
+  const [prompts, setPrompts] = useState([]);
 
 
   //---prompts--//
@@ -32,36 +28,48 @@ export default function DailyPromptContainer() {
     fetchPrompts()
   }, []);
 
-  // let randomPrompt = (prompt[Math.floor(Math.random() * prompt.length)])
 
- 
- 
-  //----entries----//
-  
-    const fetchEntries = async () => {
-        try {
-            const resp = await fetch("http://localhost:3001/entries")
-            const data = await resp.json()
-            setEntries(data) 
-        } catch (error) {
-          alert(error)   
-        }
-    }
+//entries -----------------//
+
     
-    useEffect(() => {
-        fetchEntries()
-    }, []);
+const fetchEntries = async () => {
+    try {
+        const resp = await fetch("http://localhost:3001/entries")
+        const data = await resp.json()
+        setEntries(data) 
+    } catch (error) {
+      alert(error)   
+    }
+}
 
+
+useEffect(() => {
+    fetchEntries()
+}, []);
   
+
+const addEntry = ({entry}) => {
+  const newEntry = {entry}
+  
+  fetch("http://localhost:3001/entries", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(newEntry)
+    
+  })
+  
+  setEntries([...entries, {entry}])
+  
+}
 
   return (
     <div className="promptsContainer">
       <Navbar />
       <Prompt prompt={prompts}/>
-      <EntryForm />
-      <Route path="/entries">
-      <JournalEntries entries={entries} />
-      </Route>
+      <EntryForm addEntry={addEntry}/>
+      <JournalEntries entries={entries}/>
     </div>
   )
 }

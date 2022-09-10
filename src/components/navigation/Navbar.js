@@ -15,18 +15,13 @@ const style = {
       <NavLink 
       activeStyle={{fontWeight: "bold"}}
       style={style}
-      to="/homepage/entries"
+      to="/homepage"
       >Journal</NavLink> 
       <NavLink 
       activeStyle={{fontWeight: "bold"}}
       style={style}
       to="/about"
       >About</NavLink>
-      <NavLink 
-      activeStyle={{fontWeight: "bold"}}
-      style={style}
-      to="/entries"
-      >Entries</NavLink>
     </div>
   )
 }

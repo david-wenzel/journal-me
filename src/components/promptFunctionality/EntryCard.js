@@ -1,12 +1,10 @@
 
 
-export default function EntryCard({entry}) {
+export default function EntryCard({entry, id}) {
   return (
     <div>
-        <h3>{`Journal entry ${entry.id}` || 'My Thoughts'}</h3>
+        <h3>{id}</h3>
         <p>{entry.entry}</p>
-        <small>date created</small>
-        <button>delete</button>
     </div>
   )
 }
