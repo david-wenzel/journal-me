@@ -68,7 +68,8 @@ const addEntry = ({entry}) => {
     <div className="promptsContainer">
       <Navbar />
       <Prompt prompt={prompts}/>
-      <EntryForm addEntry={addEntry}/>
+      <EntryForm id='enntryForm' addEntry={addEntry}/>
+      <br/>
       <JournalEntries entries={entries}/>
     </div>
   )

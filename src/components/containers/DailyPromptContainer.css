@@ -60,9 +60,14 @@ input{
     outline:none;
     cursor: pointer;
     background: transparent;
-    font-size: 1.5em;
-    border: none;
+    font-size: 1em;
+    border: solid, 1px;
+    border-color: #726659;
     color: #726659;
-    position: relative;
-    float: inherit
+    width: 50%;
 ;}
+
+.entryForm{
+    padding-bottom: 10em;
+    padding-top: 5em;
+}

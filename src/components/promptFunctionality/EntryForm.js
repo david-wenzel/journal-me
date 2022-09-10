@@ -16,7 +16,8 @@ const handleSubmit = e => {
     <div className="entryForm">
         <form onSubmit={handleSubmit}>   
             <textarea id='entry' onChange={e => setEntry(e.target.value)} type='text' name="entry"  value={entry} placeholder="journal your thoughts..." />
-            <input type="submit" value=">" />
+            <br/>
+            <input type="submit" value="submit" />
         </form>
     </div>
   )
