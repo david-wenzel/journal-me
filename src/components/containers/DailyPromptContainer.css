@@ -5,6 +5,9 @@ html{
     /* background-image: url("https://img.freepik.com/premium-photo/sea-texture-coastal-nature-concept-ocean-water-as-black-white-monochrome-surface-background_360074-6634.jpg?w=2000"); */
     background-color: rgb(216, 204, 204);
 }
+::selection {
+    background: rgb(210, 162, 162);
+  }
 .promptsContainer {
     display: 'flex';
     align-items: 'center';
