@@ -1,0 +1,17 @@
+.about {
+    display: 'flex';
+    align-items: 'center';
+    justify-content: 'center';
+    height: '100vh';
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    font-family: 'Cormorant', serif;
+    background-color: rgb(216, 204, 204);
+    padding: 2em;
+}
+
+#aboutP{
+    padding: 4em;
+}
