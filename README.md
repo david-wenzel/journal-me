@@ -9,10 +9,31 @@ JOURNAL.me is a react web-app which fosters self reflection through the act of j
 ## Installation and Setup Instructions
 
 Clone down this repository. You will need node and npm installed globally on your machine.
+Navigate to appropraite folder
 
 Installation: 
 ```bash
 npm install
 ```
+To Start App:
+```bash
+npm start
+npm run server
+```
+These run on ports :/3000 and :/3001
+
+## Update Roadmap
+In the future we will be releasing updates and inclusion of the following functionality;
+- Acount login
+- Delete journal entry
+- Date functionality 
+- Dark mode
+- Co-journaling 
+- Groups
+- Filter and Search
+
+##License 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
 
