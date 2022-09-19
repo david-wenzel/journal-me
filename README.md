@@ -32,7 +32,7 @@ In the future we will be releasing updates and inclusion of the following functi
 - Groups
 - Filter and Search
 
-##License 
+## License 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
